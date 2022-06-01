@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-tokenfield-demo/static/css/main.f991c32e.css",
-    "main.js": "/react-tokenfield-demo/static/js/main.250f4082.js",
+    "main.css": "/react-tokenfield-demo/static/css/main.bf4b7322.css",
+    "main.js": "/react-tokenfield-demo/static/js/main.9131bd3f.js",
     "static/js/787.af673e02.chunk.js": "/react-tokenfield-demo/static/js/787.af673e02.chunk.js",
     "index.html": "/react-tokenfield-demo/index.html",
-    "main.f991c32e.css.map": "/react-tokenfield-demo/static/css/main.f991c32e.css.map",
-    "main.250f4082.js.map": "/react-tokenfield-demo/static/js/main.250f4082.js.map",
+    "main.bf4b7322.css.map": "/react-tokenfield-demo/static/css/main.bf4b7322.css.map",
+    "main.9131bd3f.js.map": "/react-tokenfield-demo/static/js/main.9131bd3f.js.map",
     "787.af673e02.chunk.js.map": "/react-tokenfield-demo/static/js/787.af673e02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f991c32e.css",
-    "static/js/main.250f4082.js"
+    "static/css/main.bf4b7322.css",
+    "static/js/main.9131bd3f.js"
   ]
 }
