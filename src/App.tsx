@@ -1,32 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import {TokenField} from "react-tokenfield";
 import 'react-tokenfield/dist/index.css';
-
+import Demo1 from "./Demo1";
+import Demo2 from "./Demo2";
+import Demo3 from "./Demo3";
 
 function App() {
-    const [token, setTokens] = useState(['foo', 'bar', 'baz']);
     return (
         <div className="App">
-            <TokenField tokens={token} delimiters=' ;,' onChange={({tokens}) => setTokens(tokens)}/>
-            <code style={{whiteSpace:'pre-line'}}>
-                {`import React, {useState} from 'react';
-                import './App.css';
-                import {TokenField} from "react-tokenfield";
-                import 'react-tokenfield/dist/index.css';
-
-
-                function App() {
-                const [token, setTokens] = useState(['foo', 'bar', 'baz']);
-                return (
-                <div className="App">
-                <TokenField tokens={token} delimiters=' ;,' onChange={({tokens}) => setTokens(tokens)}/>
-                </div>
-                );
-            }
-
-                export default App;`}
-            </code>
+            <h1>react-tokenfield</h1>
+            <Demo1/>
+            <Demo2/>
+            <Demo3/>
         </div>
     );
 }
