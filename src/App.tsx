@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import {TokenField} from "react-tokenfield";
+import 'react-tokenfield/dist/index.css';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [token, setTokens] = useState(['foo', 'bar', 'baz']);
+    return (
+        <div className="App">
+            <TokenField tokens={token} delimiters=' ;,' onChange={({tokens}) => setTokens(tokens)}/>
+            <code style={{whiteSpace:'pre-line'}}>
+                {`import React, {useState} from 'react';
+                import './App.css';
+                import {TokenField} from "react-tokenfield";
+                import 'react-tokenfield/dist/index.css';
+
+
+                function App() {
+                const [token, setTokens] = useState(['foo', 'bar', 'baz']);
+                return (
+                <div className="App">
+                <TokenField tokens={token} delimiters=' ;,' onChange={({tokens}) => setTokens(tokens)}/>
+                </div>
+                );
+            }
+
+                export default App;`}
+            </code>
+        </div>
+    );
 }
 
 export default App;
